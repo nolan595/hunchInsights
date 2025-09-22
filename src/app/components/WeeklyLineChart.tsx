@@ -172,7 +172,7 @@ export default function WeeklyLineChart() {
                 const numericValue =
                   typeof value === "number" ? value : Number(value);
                 const label =
-                  name === "belgium"
+                  name === "Belgium Predictor"
                     ? "Belgium Predictor"
                     : "Serbia Predictor";
                 return [numericValue.toLocaleString("en-GB"), label];
