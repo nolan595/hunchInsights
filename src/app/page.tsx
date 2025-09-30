@@ -10,11 +10,9 @@ export default function Home() {
             Key insights & stats
           </p>
           <h1 className="mt-4 text-4xl font-semibold text-slate-900 sm:text-5xl">
-            Understand how Hunch predictors grow week over week.
+            New F2P players week on week
           </h1>
-          <p className="mt-4 max-w-3xl text-sm text-slate-600 sm:text-base">
-            Blend weekly player data with trend snapshots to keep leadership, partners, and future investors aligned on momentum.
-          </p>
+    
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {INSIGHTS_SUMMARY.map((item) => (
               <div
