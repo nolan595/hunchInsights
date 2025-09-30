@@ -184,7 +184,7 @@ export default function WeeklyLineChart() {
               Weekly Players – Game Comparisons
             </h2>
             <p className="mt-1 text-xs text-slate-500">
-              Toggle games and adjust the timeframe to explore predictor trends.
+              Toggle games and adjust the timeframe to see F2P growth.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
