@@ -1,18 +1,36 @@
 import WeeklyLineChart from "@/app/components/WeeklyLineChart";
+import { INSIGHTS_SUMMARY } from "@/app/constants/insights";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-slate-200 px-4 py-14 sm:px-10">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
-        <header className="rounded-3xl border border-white/60 bg-white/70 p-10 shadow-xl shadow-slate-200/60 backdrop-blur">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-500">
-            Hunch Insights Dashboard
+    <main className="min-h-[calc(100vh-72px)] bg-gradient-to-br from-white via-slate-100 to-slate-200 pb-20 pt-14">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-10">
+        <header className="rounded-3xl border border-white/70 bg-white/80 p-10 shadow-xl shadow-slate-200/60 backdrop-blur">
+          <p className="text-sm font-medium uppercase tracking-[0.32em] text-slate-500">
+            Key insights & stats
           </p>
-          <h1 className="mt-3 text-4xl font-semibold text-slate-900 sm:text-5xl">
-            Hunch F2P new players
+          <h1 className="mt-4 text-4xl font-semibold text-slate-900 sm:text-5xl">
+            Understand how Hunch predictors grow week over week.
           </h1>
-
-
+          <p className="mt-4 max-w-3xl text-sm text-slate-600 sm:text-base">
+            Blend weekly player data with trend snapshots to keep leadership, partners, and future investors aligned on momentum.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            {INSIGHTS_SUMMARY.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border border-slate-200 bg-white/80 p-4 text-sm text-slate-600 shadow-sm"
+              >
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">
+                  {item.label}
+                </p>
+                <p className="mt-3 text-2xl font-semibold text-slate-900">
+                  {item.value}
+                </p>
+                <p className="mt-1 text-xs text-emerald-600">{item.change}</p>
+              </div>
+            ))}
+          </div>
         </header>
 
         <WeeklyLineChart />
