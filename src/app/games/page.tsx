@@ -7,7 +7,7 @@ export default function GamesPage() {
         
 <div className="relative mx-auto overflow-hidden rounded-2xl shadow-xl">
 <iframe
-  src="https://embed.figma.com/proto/ZHPWaDLAPaTNkJlcChoToE/Streak-Instant-Prizing?page-id=30%3A3293&node-id=160-53553&p=f&viewport=-7107%2C568%2C0.29&scaling=scale-down&content-scaling=fixed&starting-point-node-id=160%3A54076&show-proto-sidebar=0&embed-host=share"
+  src="https://embed.figma.com/proto/ZHPWaDLAPaTNkJlcChoToE/Streak-Instant-Prizing?page-id=30%3A3293&node-id=160-53553&p=f&viewport=-7107%2C568%2C0.29&scaling=contain&content-scaling=fixed&starting-point-node-id=160%3A54076&show-proto-sidebar=0&embed-host=share&hide-ui=1"
   style={{ border: 0, width: 420, height: 880 }}
   allow="fullscreen"
   allowFullScreen
